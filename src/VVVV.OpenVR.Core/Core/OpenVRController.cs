@@ -120,7 +120,7 @@ namespace VVVV.Nodes.ValveOpenVR
                 if (system != null)
                 {
                     var axisId = (uint)buttonId - (uint)EVRButtonId.k_EButton_Axis0;
-                    system.TriggerHapticPulse(index, axisId, (char)durationMicroSec);
+                    system.TriggerHapticPulse(index, (uint)buttonId, (char)durationMicroSec);
                 }
             }
 
